@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.typekit.net/ykg3zuk.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../functions.js"></script>
+    <title>Holzify | Material Wissen</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="../../assets/logo/holzify_logo.svg" onclick="location.href='../../index.html'">
+        <nav>
+            <a href="../../index.html">
+                <div class="navItem">
+                    <img class ="navIcon" src="../../assets/nav_icon/nav_home.svg">
+                    <p>Start</p>
+                </div>
+            </a>
+
+            <a href="einleitung.html">
+                <div class="navItem" id="navItemActive">
+                    <img class ="navIcon" src="../../assets/nav_icon/nav_wissen.svg">
+                    <p>Wissen</p>
+                </div>
+            </a>
+
+            <a href="../../sicherheit/kleidung.html">
+                <div class="navItem">
+                    <img class ="navIcon" src="../../assets/nav_icon/nav_sicherheit.svg">
+                    <p>Sicherheit</p>
+                </div>
+            </a>
+
+            <a href="../../diy/meditationsbank/schritt1.html">
+                <div class="navItem">
+                    <img class ="navIcon" src="../../assets/nav_icon/nav_diy.svg">
+                    <p>DIY</p>
+                </div>
+            </a>
+        </nav>
+    </header>
+    <main id="content">
+
+        <div id="popUp">
+            <img src="../../assets/popup/avatar.png">
+            <p>Schaue dir doch zuerst das Massivholz an.</p>
+            <img id="closeButton" src="../../assets/button/button_close.svg" onclick="togglePopUp()">
+        </div>
+
+        <h1>Wissen</h1>
+        <div class="dropdownMenu">
+            <button class="dropdownButton dropdownActive" id="material" onclick="toggleDropdown(this.id)">Material &emsp; &#x25BC;</button>
+            <div class="dropdownBox" id="materialBox">
+                <div class="dropdownImage">
+                    <img src="../../assets/dropdown/dropdown_material.jpg"/>
+                </div>
+                <div class="dropdownContent">
+                    <a href="einleitung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">1</div>
+                            <div class="dropdownText">
+                                <p>Einleitung</p>
+                                <span>Worum geht es?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="massivholz.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">2</div>
+                            <div class="dropdownText">
+                                <p>Massivholz</p>
+                                <span>Massiv und stark ...</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="plattenwerkstoffe.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">3</div>
+                            <div class="dropdownText">
+                                <p>Plattenwerkstoffe</p>
+                                <span>oder leicht und vielseitig?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="quiz.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">4</div>
+                            <div class="dropdownText">
+                                <p>Quiz</p>
+                                <span>Teste dein Wissen!</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button class="dropdownButton" id="werkzeug" onclick="toggleDropdown(this.id)">Werkzeug &emsp; &#x25BC;</button>
+            <div class="dropdownBox" id="werkzeugBox">
+                <div class="dropdownImage">
+                    <img src="../../assets/dropdown/dropdown_werkzeug.jpg"/>
+                </div>
+                <div class="dropdownContent">
+                    <a href="../werkzeug/einleitung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">1</div>
+                            <div class="dropdownText">
+                                <p>Einleitung</p>
+                                <span>Worum geht es?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../werkzeug/holzbearbeitung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">2</div>
+                            <div class="dropdownText">
+                                <p>Holzbearbeitung</p>
+                                <span>Lieber elektrisch oder doch von Hand?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../werkzeug/hilfsmittel.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">3</div>
+                            <div class="dropdownText">
+                                <p>Hilfsmittel</p>
+                                <span>Kleine Helfer der Holzbearbeitung</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../werkzeug/oberflaechenbehandlung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">4</div>
+                            <div class="dropdownText">
+                                <p>Oberflächenbehandlung</p>
+                                <span>Aus rau wird fein</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../werkzeug/quiz.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">5</div>
+                            <div class="dropdownText">
+                                <p>Quiz</p>
+                                <span>Teste dein Wissen!</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button class="dropdownButton" id="techniken" onclick="toggleDropdown(this.id)">Techniken &emsp; &#x25BC;</button>
+            <div class="dropdownBox" id="technikenBox">
+                <div class="dropdownImage">
+                    <img src="../../assets/dropdown/dropdown_techniken.jpg"/>
+                </div>
+                <div class="dropdownContent">
+                    <a href="../techniken/einleitung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">1</div>
+                            <div class="dropdownText">
+                                <p>Einleitung</p>
+                                <span>Worum geht es?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../techniken/holzverbindungen.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">2</div>
+                            <div class="dropdownText">
+                                <p>Holzverbindungen</p>
+                                <span>Zapfen, Schlitz und mehr</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../techniken/oberflaechenbehandlung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">3</div>
+                            <div class="dropdownText">
+                                <p>Oberflächenbehandlung</p>
+                                <span>Wachsen, Ölen oder doch Lackieren?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../techniken/quiz.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">4</div>
+                            <div class="dropdownText">
+                                <p>Quiz</p>
+                                <span>Teste dein Wissen!</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <article>
+            <h2>2. Massivholz</h2>
+            <figure>
+                <img id="headerImg" src="../../assets/img/img_wissen_material_massivholz.png">
+            </figure>
+            <p>Der Begriff „Massivholz“ (auch "Vollholz" genannt) ist dir bestimmt schonmal im Bereich der Industrie oder beim Kauf von
+            Möbel begegnet. Meist wird Massivholz mit einer hohen Qualität assoziiert. Und das nicht ohne Grund, denn der hohe
+            Qualitätsstandard von Massivholz liegt strengen Normen, Richtlinien und Kontrollen zu Grunde.</p><br>
+            
+            <p>Als Massivholz werden Holzprodukte bezeichnet, bei dem das Holz einer Baumart zuzuordnen ist (z.B. Buche, Eiche oder
+            Kiefer), man nennt es auch reines Holz. Solche Hölzer werden in der Regel naturverarbeitet, mechanische oder chemische
+            Mittel kommen bei der Behandlung nicht zum Einsatz.</p><br>
+            
+            <p>Bei den Massivhölzern wird grundsätzlich zwischen Hart- und Weichhölzern unterschieden. Zu den Harthölzern zählen
+            beispielsweise Eiche, Buche, Esche, Nussbaum, Akazie oder Ahorn. Wie der Name bereits sagt sind diese Hölzer besonders
+            hart und robust. Die Weichhölzer hingegen beinhalten zum Beispiel Fichte, Kiefer, Tanne, Lärche oder Douglasie. Auch
+            hier sagt der Name bereits, dass diese Hölzer eher weich sind und dementsprechend weniger robust.</p><br>
+            
+            <p>Du fragst dich jetzt bestimmt, wann du dich für Weichholz und wann für Hartholz entscheiden solltest? Das kommt ganz
+            klar auf das spätere Einsatzgebiet des Holzes an – du hast ja bereits gelernt hast, dass beide Holzarten ihre Vor- und
+            Nachteile haben. Weichhölzer werden zum Beispiel im Holzfertigbau als Hauptmaterial eingesetzt und haben durch den
+            konstruktiv spezifischen Einbau eine sehr lange Lebensdauer. Harthölzer bieten eine große Bandbreite an Farben mit zum
+            Teil sehr lebhaften Maserungen – sie werden bevorzugt im Innenausbau eingesetzt.</p><br>
+            
+            <p>Bei allen Holzarten gibt es jeweils besondere Eigenschaften, auf die du bei der Verarbeitung achten musst.
+            Beispielsweise ist besonders bei Holz, dass es schwindet und quillt. Man sagt auch »Das Holz arbeitet«. Das Arbeiten des
+            Holzes wird durch den Feuchtegehalt ausgelöst. Aus dem Grund kannst du auch kein Holz für ein Möbelstück verwenden, das
+            gerade noch aus einem Baum gesägt wurde. Nimmt die Feuchtigkeit im Holz ab schwindet das Holz, es wird also kleiner.
+            Nimmt sie zu, quillt das Holz, es wird größer. </p><br>
+            
+            <p>Da du ja vermutlich bereits vollständig getrocknetes Holz verwenden wirst, fragst du dich vielleicht, warum das für dich wichtig ist. Ein Holzbrett reagiert auf die
+            Feuchtigkeitsveränderung in dem Raum, in dem es sich befindet. Bei saisonbedingten Feuchtigkeitsveränderungen von 30-70%
+            Luftfeuchtigkeit verändert sich also auch die Feuchtigkeit, die das Holz aufnimmt und abgibt. Diese Schwankungen müssen
+            dabei einkalkuliert werden. Dabei schwindet ein Holzbrett in Richtung längs zur Faser weniger, als quer.</p>
+            
+            <button id="contentBottomButton" onclick="location.href='plattenwerkstoffe.html'">Nächstes Kapitel</button>
+        </article>
+        
+    </main>
+    <footer>
+        <a href="../../impressum.html">Impressum</a>
+        <a href="../../datenschutz.html">Datenschutz</a>
+    </footer>
+</body>
+</html>

@@ -1,41 +1,87 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html lang="de">
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.typekit.net/ykg3zuk.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Holzify | Start</title>
 </head>
-
 <body>
-  <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+    <header>
+        <img id="logo" src="../../assets/logo/holzify_logo.svg" onclick="location.href='index.html'">
+        <nav>
+            <a href="index.html">
+                <div class="navItem" id="navItemActive">
+                    <img class ="navIcon" src="assets/nav_icon/nav_home.svg">
+                    <p>Start</p>
+                </div>
+            </a>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+            <a href="/wissen/material/einleitung.html">
+                <div class="navItem">
+                    <img class ="navIcon" src="assets/nav_icon/nav_wissen.svg">
+                    <p>Wissen</p>
+                </div>
+            </a>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+            <a href="sicherheit/kleidung.html">
+                <div class="navItem">
+                    <img class ="navIcon" src="assets/nav_icon/nav_sicherheit.svg">
+                    <p>Sicherheit</p>
+                </div>
+            </a>
+
+            <a href="diy/meditationsbank/schritt1.html">
+                <div class="navItem">
+                    <img class ="navIcon" src="assets/nav_icon/nav_diy.svg">
+                    <p>DIY</p>
+                </div>
+            </a>
+        </nav>
+    </header>
+
+    <main id="startScreen">
+        <div class="startScreenBox welcome">
+            <h2>Willkommen zurück!</h2>
+            <h4>Hast du Lust auf Holzbearbeitung?</h4>
+            <button class="roundButton" onclick="location.href='wissen/material/einleitung.html'">Lerne etwas neues!</button>
+        </div>
+        <a href="">
+            <div class="startScreenBox">
+                <img class="projectImage headphone" src="assets/img/img_kopfhörerhalter.png">
+                <div>
+                    <h4>Projekt:</h4>
+                    <h3>Kopfhörerhalter</h2>
+                </div>
+                <img class="buttonRight" src="assets/button/button_arrow_right.svg">
+            </div>
+        </a>
+        <a href="">
+            <div class="startScreenBox">
+                <img class="projectImage stand" src="assets/img/img_bildschirmstaender.png">
+                <div>
+                    <h4>Projekt:</h4>
+                    <h3>Bildschirmständer</h3>
+                </div>
+                <img class="buttonRight" src="assets/button/button_arrow_right.svg">
+            </div>
+        </a>
+        <a href="">
+            <div class="startScreenBox">
+                <img class="projectImage house" src="assets/img/img_vogelhaus.png">
+                <div>
+                    <h4>Projekt:</h4>
+                    <h3>Vogelhaus</h3>
+                </div>
+                <img class="buttonRight" src="assets/button/button_arrow_right.svg">
+            </div>
+        </a>
+    </main>
+    <footer>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+    </footer>
 </body>
-
 </html>

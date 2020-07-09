@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.typekit.net/ykg3zuk.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../functions.js"></script>
+    <title>Holzify | Werkzeug Wissen</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="../../assets/logo/holzify_logo.svg" onclick="location.href='../../index.html'">
+        <nav>
+            <a href="../../index.html">
+                <div class="navItem">
+                    <img class ="navIcon" src="../../assets/nav_icon/nav_home.svg">
+                    <p>Start</p>
+                </div>
+            </a>
+
+            <a href="../material/einleitung.html">
+                <div class="navItem" id="navItemActive">
+                    <img class ="navIcon" src="../../assets/nav_icon/nav_wissen.svg">
+                    <p>Wissen</p>
+                </div>
+            </a>
+
+            <a href="../../sicherheit/kleidung.html">
+                <div class="navItem">
+                    <img class ="navIcon" src="../../assets/nav_icon/nav_sicherheit.svg">
+                    <p>Sicherheit</p>
+                </div>
+            </a>
+
+            <a href="../../diy/meditationsbank/schritt1.html">
+                <div class="navItem">
+                    <img class ="navIcon" src="../../assets/nav_icon/nav_diy.svg">
+                    <p>DIY</p>
+                </div>
+            </a>
+        </nav>
+    </header>
+    <main id="content">
+
+        <div id="popUp">
+            <img src="../../assets/popup/avatar.png">
+            <p>Folgende Hilfsmittel sollten zu deiner neuen Ausrüstung gehören!</p>
+            <img id="closeButton" src="../../assets/button/button_close.svg" onclick="togglePopUp()">
+        </div>
+
+        <h1>Wissen</h1>
+        <div class="dropdownMenu">
+            <button class="dropdownButton" id="material" onclick="toggleDropdown(this.id)">Material &emsp; &#x25BC;</button>
+            <div class="dropdownBox" id="materialBox">
+                <div class="dropdownImage">
+                    <img src="../../assets/dropdown/dropdown_material.jpg"/>
+                </div>
+                <div class="dropdownContent">
+                    <a href="../material/einleitung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">1</div>
+                            <div class="dropdownText">
+                                <p>Einleitung</p>
+                                <span>Worum geht es?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../material/massivholz.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">2</div>
+                            <div class="dropdownText">
+                                <p>Massivholz</p>
+                                <span>Massiv und stark ...</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../material/plattenwerkstoffe.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">3</div>
+                            <div class="dropdownText">
+                                <p>Plattenwerkstoffe</p>
+                                <span>oder leicht und vielseitig?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="quiz.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">4</div>
+                            <div class="dropdownText">
+                                <p>Quiz</p>
+                                <span>Teste dein Wissen!</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button class="dropdownButton dropdownActive" id="werkzeug" onclick="toggleDropdown(this.id)">Werkzeug &emsp; &#x25BC;</button>
+            <div class="dropdownBox" id="werkzeugBox">
+                <div class="dropdownImage">
+                    <img src="../../assets/dropdown/dropdown_werkzeug.jpg"/>
+                </div>
+                <div class="dropdownContent">
+                    <a href="einleitung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">1</div>
+                            <div class="dropdownText">
+                                <p>Einleitung</p>
+                                <span>Worum geht es?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="holzbearbeitung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">2</div>
+                            <div class="dropdownText">
+                                <p>Holzbearbeitung</p>
+                                <span>Lieber elektrisch oder doch von Hand?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="hilfsmittel.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">3</div>
+                            <div class="dropdownText">
+                                <p>Hilfsmittel</p>
+                                <span>Kleine Helfer der Holzbearbeitung</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="oberflaechenbehandlung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">4</div>
+                            <div class="dropdownText">
+                                <p>Oberflächenbehandlung</p>
+                                <span>Aus rau wird fein</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="quiz.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">5</div>
+                            <div class="dropdownText">
+                                <p>Quiz</p>
+                                <span>Teste dein Wissen!</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button class="dropdownButton" id="techniken" onclick="toggleDropdown(this.id)">Techniken &emsp; &#x25BC;</button>
+            <div class="dropdownBox" id="technikenBox">
+                <div class="dropdownImage">
+                    <img src="../../assets/dropdown/dropdown_techniken.jpg"/>
+                </div>
+                <div class="dropdownContent">
+                    <a href="../techniken/einleitung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">1</div>
+                            <div class="dropdownText">
+                                <p>Einleitung</p>
+                                <span>Worum geht es?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../techniken/holzverbindungen.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">2</div>
+                            <div class="dropdownText">
+                                <p>Holzverbindungen</p>
+                                <span>Zapfen, Schlitz und mehr</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../techniken/oberflaechenbehandlung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">3</div>
+                            <div class="dropdownText">
+                                <p>Oberflächenbehandlung</p>
+                                <span>Wachsen, Ölen oder doch Lackieren?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../techniken/quiz.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">4</div>
+                            <div class="dropdownText">
+                                <p>Quiz</p>
+                                <span>Teste dein Wissen!</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <article>
+            <h2>3. Hilfsmittel</h2>
+            <figure>
+                <img id="headerImg" src="../../assets/img/img_wissen_werkzeug_hilfsmittel.png">
+            </figure>
+
+            <p>Du hast nun bereits einiges über die wichtigsten Werkzeuge zur Holzbearbeitung gelernt. Man darf aber nicht die
+            Notwendigkeit bestimmter Hilfsmittel zur Holzbearbeitung unterschätzen. Diese kleinen Hilfsmittel bestimmen nämlich
+            meistens über den Erfolg eines Projekts, vollkommen unabhängig von deiner Werkzeug Ausstattung. Deswegen geben wir
+            dir im folgenden einen Überblick über die Hilfsmittel, mit denen du für deine zukünftigen Projekte vertraut sein
+            solltest!</p><br>
+            
+            <p>Schraubzwingen werden genutzt, um dein Werkstück einzuspannen. Das ist wichtig, damit du vernünftig und sicher an
+            deinem Projekt arbeiten kannst.Ein Holzklüpfel wird anstatt eines Hammers verwendet, um das Stemmeisen zu benutzen. Ein Winkelmesser ist wichtig, um präzise Winkel beim Arbeiten setzen zu können. Hier kommt es auf Genauigkeit an, du
+            solltest vermeiden, dich auf deine eigene visuelle Einschätzung zu verlassen und lieber immer genau nachmessen. Ein Anreißer ist sinnvoll, um Markierungen in das Holz zu ritzen. Du wirst es dir danken, wenn du dir dadurch
+            einiges an Mehrarbeit sparst. Verwende in jedem Fall die richtigen Holzbohrer anstatt statt Stein- und Metallbohrer zu verwenden. Hier lohnt es
+            sich, in anständige Holzbohrer zu investieren, um vernünftig arbeiten zu können. Zu guter letzt wollen wir noch den Forstnerbohrer nahe legen. Vor allem wenn du große Löcher benötigst, lohnt es
+            sich diesen sehr breiten Bohrer zu verwenden.</p>
+
+            <button id="contentBottomButton" onclick="location.href='oberflaechenbehandlung.html'">Nächstes Kapitel</button>
+        </article>
+    </main>
+    <footer>
+        <a href="../../impressum.html">Impressum</a>
+        <a href="../../datenschutz.html">Datenschutz</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="135" height="136" viewBox="0 0 135 136">
+  <g id="Gruppe_200" data-name="Gruppe 200" transform="translate(-6.936 -4.543)">
+    <rect id="Rechteck_2" data-name="Rechteck 2" width="135" height="136" rx="67.5" transform="translate(6.936 4.543)" fill="#5a3e34"/>
+    <g id="Polygon_1" data-name="Polygon 1" transform="translate(111.936 59.543) rotate(90)" fill="#fff">
+      <path d="M 32.23779678344727 37.5 L 0.7622039318084717 37.5 L 16.5 1.255378842353821 L 32.23779678344727 37.5 Z" stroke="none"/>
+      <path d="M 16.5 2.510757446289062 L 1.524408340454102 37 L 31.4755916595459 37 L 16.5 2.510757446289062 M 16.5 0 L 33 38 L 0 38 L 16.5 0 Z" stroke="none" fill="#fff"/>
+    </g>
+    <line id="Linie_2" data-name="Linie 2" x2="47.403" transform="translate(39.723 75.217)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="7"/>
+  </g>
+</svg>

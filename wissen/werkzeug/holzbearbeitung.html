@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.typekit.net/ykg3zuk.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../functions.js"></script>
+    <title>Holzify | Werkzeug Wissen</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="../../assets/logo/holzify_logo.svg" onclick="location.href='../../index.html'">
+        <nav>
+            <a href="../../index.html">
+                <div class="navItem">
+                    <img class ="navIcon" src="../../assets/nav_icon/nav_home.svg">
+                    <p>Start</p>
+                </div>
+            </a>
+
+            <a href="../material/einleitung.html">
+                <div class="navItem" id="navItemActive">
+                    <img class ="navIcon" src="../../assets/nav_icon/nav_wissen.svg">
+                    <p>Wissen</p>
+                </div>
+            </a>
+
+            <a href="../../sicherheit/kleidung.html">
+                <div class="navItem">
+                    <img class ="navIcon" src="../../assets/nav_icon/nav_sicherheit.svg">
+                    <p>Sicherheit</p>
+                </div>
+            </a>
+
+            <a href="../../diy/meditationsbank/schritt1.html">
+                <div class="navItem">
+                    <img class ="navIcon" src="../../assets/nav_icon/nav_diy.svg">
+                    <p>DIY</p>
+                </div>
+            </a>
+        </nav>
+    </header>
+    <main id="content">
+
+        <div id="popUp">
+            <img src="../../assets/popup/avatar.png">
+            <p>Kommen wir zu den grundlegenden Werkzeugen, die man für Standard Projekte kennen sollte. </p>
+            <img id="closeButton" src="../../assets/button/button_close.svg" onclick="togglePopUp()">
+        </div>
+
+        <h1>Wissen</h1>
+        <div class="dropdownMenu">
+            <button class="dropdownButton" id="material" onclick="toggleDropdown(this.id)">Material &emsp; &#x25BC;</button>
+            <div class="dropdownBox" id="materialBox">
+                <div class="dropdownImage">
+                    <img src="../../assets/dropdown/dropdown_material.jpg"/>
+                </div>
+                <div class="dropdownContent">
+                    <a href="../material/einleitung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">1</div>
+                            <div class="dropdownText">
+                                <p>Einleitung</p>
+                                <span>Worum geht es?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../material/massivholz.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">2</div>
+                            <div class="dropdownText">
+                                <p>Massivholz</p>
+                                <span>Massiv und stark ...</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../material/plattenwerkstoffe.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">3</div>
+                            <div class="dropdownText">
+                                <p>Plattenwerkstoffe</p>
+                                <span>oder leicht und vielseitig?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="quiz.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">4</div>
+                            <div class="dropdownText">
+                                <p>Quiz</p>
+                                <span>Teste dein Wissen!</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button class="dropdownButton dropdownActive" id="werkzeug" onclick="toggleDropdown(this.id)">Werkzeug &emsp; &#x25BC;</button>
+            <div class="dropdownBox" id="werkzeugBox">
+                <div class="dropdownImage">
+                    <img src="../../assets/dropdown/dropdown_werkzeug.jpg"/>
+                </div>
+                <div class="dropdownContent">
+                    <a href="einleitung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">1</div>
+                            <div class="dropdownText">
+                                <p>Einleitung</p>
+                                <span>Worum geht es?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="holzbearbeitung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">2</div>
+                            <div class="dropdownText">
+                                <p>Holzbearbeitung</p>
+                                <span>Lieber elektrisch oder doch von Hand?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="hilfsmittel.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">3</div>
+                            <div class="dropdownText">
+                                <p>Hilfsmittel</p>
+                                <span>Kleine Helfer der Holzbearbeitung</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="oberflaechenbehandlung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">4</div>
+                            <div class="dropdownText">
+                                <p>Oberflächenbehandlung</p>
+                                <span>Aus rau wird fein</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="quiz.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">5</div>
+                            <div class="dropdownText">
+                                <p>Quiz</p>
+                                <span>Teste dein Wissen!</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button class="dropdownButton" id="techniken" onclick="toggleDropdown(this.id)">Techniken &emsp; &#x25BC;</button>
+            <div class="dropdownBox" id="technikenBox">
+                <div class="dropdownImage">
+                    <img src="../../assets/dropdown/dropdown_techniken.jpg"/>
+                </div>
+                <div class="dropdownContent">
+                    <a href="../techniken/einleitung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">1</div>
+                            <div class="dropdownText">
+                                <p>Einleitung</p>
+                                <span>Worum geht es?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../techniken/holzverbindungen.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">2</div>
+                            <div class="dropdownText">
+                                <p>Holzverbindungen</p>
+                                <span>Zapfen, Schlitz und mehr</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../techniken/oberflaechenbehandlung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">3</div>
+                            <div class="dropdownText">
+                                <p>Oberflächenbehandlung</p>
+                                <span>Wachsen, Ölen oder doch Lackieren?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../techniken/quiz.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">4</div>
+                            <div class="dropdownText">
+                                <p>Quiz</p>
+                                <span>Teste dein Wissen!</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <article>
+            <h2>2. Holzbearbeitung</h2>
+            <figure>
+                <img id="headerImg" src="../../assets/img/img_wissen_werkzeug_holzbearbeitung.png">
+            </figure>
+            <p>Am Anfang ist wichtig zu erwähnen, dass du die Werkzeugbedienung und Besonderheiten stets in den Herstellerangaben
+            nachlesen solltest. Super, lass uns mit den Werkzeugen zur klassischen Holzbearbeitung beginnen!</p><br>
+            
+            <p>Die Werkzeuge zur Holzbearbeitung lassen sich grundsätzlich in Handwerkzeuge (klein, übersichtlich in der
+            Funktionalität, teilweise günstig und gebraucht zu erwerben) und Tischwerkzeuge (tendenziell eher teuer und groß)
+            aufgliedern. Da wir erwarten, dass du eher mit Handwerkzeugen arbeiten wirst, legen wir hierauf den Fokus und
+            beschränken uns bei den Tischwerkzeugen auf einen kompakten Überblick.</p><br>
+            
+            <h3>Handwerkzeuge</h3>
+            
+            <p>1. Grundsätzliche Werkzeuge</p><br>
+            
+            <p>Der Handhobel besitzt sehr viele unterschiedliche Anwendungensgebiete und es existieren viele verschiedene Hobelarten,
+            zum Beispiel zum Glätten von Oberflächen oder zur Fasenerstellung (Abschrägung von Kanten, Abrichten von Kanten). 
+            Das Stemmeisen existiert in verschiedenen Breiten zum manuellen Bearbeiten von Holz, zum Beispiel zum Ausklinken von
+            Holzstücken aus einem größeren Brett. Der Akkuschrauber ist ein elektrisches Handwerkzeug, dass vor allem zum Bohren von Löchern (für Holzdübel, Einschrauben
+            von Schrauben, Senken von Löchern) genutzt wird. Die Handoberfräse ist ebenfalls ein elektrisches Handwerkzeug, dass verschiedene Fräsköpfe mit unterschiedlichen
+            Einsatzarten besitzt. Sie wird zum Beispiel für das Abrunden oder Abschrägen von Kanten genutzt.</p><br>
+            
+            <p>2. Sägen</p><br>
+            
+            <p>Die Handsäge ist eine gröbere Säge, die auf Druck arbeitet, du musst also die Säge wegdrücken zum Sägen. Die Japansäge hingegen ist eher eine feine Säge, welche auf Zug arbeitet. Das heißt, du musst ziehen um zu Sägen.
+            Die Stichsäge ist im Gegensatz zu Hand- und Japansäge eine elektrische Säge mit einem dünnen, kurzen Sägeblatt. Sie
+            besitzt einen nach oben ziehenden Schnitt. Die Handkreissäge ist genauso wie die Stichsäge eine elektrische Säge, aber mit einem runden Sägeblatt. Der Sägeschnitt
+            funktioniert in Richtung der Bewegung, es gibt zusätzlich die Möglichkeit zur Nutzung einer Schiene für das Erstellen
+            von exakt geraden Kanten.</p><br>
+            
+            <p>3. Oberflächenbearbeitung</p><br>
+            
+            <p>Eine weitere Art der Handwerkzeuge, sind Werkzeuge für die Oberflächenbearbeitung. Wir legen hier einen Fokus auf
+            Werkzeuge für das Schleifen. Allgemein ist wichtig, dass du immer in Richtung der Fasern schleifst, da man sonst die
+            Kratzer im Holz sehen kann – unabhängig von deinem Werkzeug. Der Schwingschleifer ist ein elektrisches Schleifwerkzeug. Er besitzt eine rechteckige Schleifplatte, diese Platte
+            schwingt hin und her – das führt zu eher wenig Schleifabtrag. Der Bandschleifer ist auch ein elektrisches Schleifwerkzeug. Er besitzt aber eine rechteckige Schleiffläche. Ein breites
+            Schleifband gleitet über die Rollen, was zu einer sehr große Schleifleistung führt. Der Exzenterschleifer ist ebenso ein elektrisches Schleifwerkzeug mit einem runden Schleifteller. Die Schleiffläche
+            bewegt sich hier exzentrisch um die Mittelachse, was zu einer mittleren Schleifleistung führt. Das letzte elektrische Schleifwerkzeug ist der Dreieckschleifer. Wie der Name bereits sagt, besitzt er eine dreieckige
+            Schleifplatte, diese vibriert schwingend und eignet sich sehr gut für das Schleifen von Ecken.</p><br>
+            
+            <p>Das Schleifpapier ist ein Papier und der Schleifklotz ein Klotz aus Kunststoff oder Holz zum händischen – nicht
+            elektrischen – Schleifen von Werkstücken. Beide haben eine eher geringe Schleifleistung im vergleich zu den elektrischen
+            Alternativen. Ein Tipp für deinen nächsten Schleifpapier Einkauf: Schleifpapier wird mit dem Buchstaben P und der
+            dahinterstehenden Zahl definiert. Je höher die Zahl, desto kleiner die Schleifpartikel. P80 für eher grobes Schleifen,
+            P120-P180 für den Mittelschliff, P320 für den Feinschliff, P400-P2000 für eine sehr glatte bis spiegelnde Oberfläche.</p><br>
+            
+            
+            <h3>Tischwerkzeuge</h3>
+            
+            <p>Ein wichtiges Tischwerkzeug ist die große Tischkreissäge, welche für Längs- und Querschnitte verwendet wird. Außerdem gibt es die sogenannte Tischfräse, die gleich wie Handoberfräse funktioniert, nur auf dem Kopf unter einem
+            Tisch montiert wird. Der Dickenhobel ist eine breite, mit Messern besetzte Hobelwelle, die genutzt wird um breite Bretter in der Dicke
+            abzuhobeln. Der Abrichthobel ist eine ähnliche Hobelwelle, die hauptsächlich zum Begradigen von Kanten an Holzbrettern genutzt wird. Die Kappsäge ist ein Tischwerkzeug, dass eher zum Absägen von Holzbrettern in der Breite dient.</p>
+    
+            <button id="contentBottomButton" onclick="location.href='hilfsmittel.html'">Nächstes Kapitel</button>
+        </article>
+    </main>
+    <footer>
+        <a href="../../impressum.html">Impressum</a>
+        <a href="../../datenschutz.html">Datenschutz</a>
+    </footer>
+</body>
+</html>

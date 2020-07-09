@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.typekit.net/ykg3zuk.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../functions.js"></script>
+    <title>Holzify | Technik Wissen</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="../../assets/logo/holzify_logo.svg" onclick="location.href='../../index.html'">
+        <nav>
+            <a href="../../index.html">
+                <div class="navItem">
+                    <img class ="navIcon" src="../../assets/nav_icon/nav_home.svg">
+                    <p>Start</p>
+                </div>
+            </a>
+
+            <a href="../material/einleitung">
+                <div class="navItem" id="navItemActive">
+                    <img class ="navIcon" src="../../assets/nav_icon/nav_wissen.svg">
+                    <p>Wissen</p>
+                </div>
+            </a>
+
+            <a href="../../sicherheit/kleidung.html">
+                <div class="navItem">
+                    <img class ="navIcon" src="../../assets/nav_icon/nav_sicherheit.svg">
+                    <p>Sicherheit</p>
+                </div>
+            </a>
+
+            <a href="../../diy/meditationsbank/schritt1.html">
+                <div class="navItem">
+                    <img class ="navIcon" src="../../assets/nav_icon/nav_diy.svg">
+                    <p>DIY</p>
+                </div>
+            </a>
+        </nav>
+    </header>
+    <main id="content">
+
+        <div id="popUp">
+            <img src="../../assets/popup/avatar.png">
+            <p>Jetzt bringe ich dir die verschiedenen Techniken der Holzbearbeitung bei.</p>
+            <img id="closeButton" src="../../assets/button/button_close.svg" onclick="togglePopUp()">
+        </div>
+
+        <h1>Wissen</h1>
+        <div class="dropdownMenu">
+            <button class="dropdownButton" id="material" onclick="toggleDropdown(this.id)">Material &emsp; &#x25BC;</button>
+            <div class="dropdownBox" id="materialBox">
+                <div class="dropdownImage">
+                    <img src="../../assets/dropdown/dropdown_material.jpg"/>
+                </div>
+                <div class="dropdownContent">
+                    <a href="../material/einleitung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">1</div>
+                            <div class="dropdownText">
+                                <p>Einleitung</p>
+                                <span>Worum geht es?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../material/massivholz.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">2</div>
+                            <div class="dropdownText">
+                                <p>Massivholz</p>
+                                <span>Massiv und stark ...</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../material/plattenwerkstoffe.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">3</div>
+                            <div class="dropdownText">
+                                <p>Plattenwerkstoffe</p>
+                                <span>oder leicht und vielseitig?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../material/quiz.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">4</div>
+                            <div class="dropdownText">
+                                <p>Quiz</p>
+                                <span>Teste dein Wissen!</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button class="dropdownButton" id="werkzeug" onclick="toggleDropdown(this.id)">Werkzeug &emsp; &#x25BC;</button>
+            <div class="dropdownBox" id="werkzeugBox">
+                <div class="dropdownImage">
+                    <img src="../../assets/dropdown/dropdown_werkzeug.jpg"/>
+                </div>
+                <div class="dropdownContent">
+                    <a href="../werkzeug/einleitung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">1</div>
+                            <div class="dropdownText">
+                                <p>Einleitung</p>
+                                <span>Worum geht es?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../werkzeug/holzbearbeitung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">2</div>
+                            <div class="dropdownText">
+                                <p>Holzbearbeitung</p>
+                                <span>Lieber elektrisch oder doch von Hand?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../werkzeug/hilfsmittel.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">3</div>
+                            <div class="dropdownText">
+                                <p>Hilfsmittel</p>
+                                <span>Kleine Helfer der Holzbearbeitung</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../werkzeug/oberflaechenbehandlung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">4</div>
+                            <div class="dropdownText">
+                                <p>Oberflächenbehandlung</p>
+                                <span>Aus rau wird fein</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../werkzeug/quiz.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">5</div>
+                            <div class="dropdownText">
+                                <p>Quiz</p>
+                                <span>Teste dein Wissen!</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button class="dropdownButton  dropdownActive" id="techniken" onclick="toggleDropdown(this.id)">Techniken &emsp; &#x25BC;</button>
+            <div class="dropdownBox" id="technikenBox">
+                <div class="dropdownImage">
+                    <img src="../../assets/dropdown/dropdown_techniken.jpg"/>
+                </div>
+                <div class="dropdownContent">
+                    <a href="einleitung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">1</div>
+                            <div class="dropdownText">
+                                <p>Einleitung</p>
+                                <span>Worum geht es?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="holzverbindungen.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">2</div>
+                            <div class="dropdownText">
+                                <p>Holzverbindungen</p>
+                                <span>Zapfen, Schlitz und mehr</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="oberflaechenbehandlung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">3</div>
+                            <div class="dropdownText">
+                                <p>Oberflächenbehandlung</p>
+                                <span>Wachsen, Ölen oder doch Lackieren?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="quiz.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">4</div>
+                            <div class="dropdownText">
+                                <p>Quiz</p>
+                                <span>Teste dein Wissen!</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <article>
+            <h2>1. Einleitung</h2>
+            <figure>
+                <video autoplay id="headerImg" src="../../assets/img/techniken_intro.mp4" controls>
+            </figure>
+            <p>Genauso wie es verschiedene Materialien und Werkzeuge gibt, gibt es auch eine Vielzahl an verschiedenen Techniken die in
+            der Holzbearbeitung zum Einsatz kommen. Um die in unserer App gezeigten DIY-Projekte umsetzen zu können, reicht es zum
+            Glück aus, Basiswissen in den Bereichen Holzverbindungen und Obeflächenbehandlung zu erlangen.</p>
+            
+            <button id="contentBottomButton" onclick="location.href='holzverbindungen.html'">Nächstes Kapitel</button>
+        </article>
+    </main>
+    <footer>
+        <a href="../../impressum.html">Impressum</a>
+        <a href="../../datenschutz.html">Datenschutz</a>
+    </footer>
+</body>
+</html>

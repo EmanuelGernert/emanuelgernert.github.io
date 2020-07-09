@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.typekit.net/ykg3zuk.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../functions.js"></script>
+    <title>Holzify | Sicherheitsprinzipien</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="../../assets/logo/holzify_logo.svg" onclick="location.href='../index.html'">
+        <nav>
+            <a href="../../index.html">
+                <div class="navItem">
+                    <img class ="navIcon" src="../../assets/nav_icon/nav_home.svg">
+                    <p>Start</p>
+                </div>
+            </a>
+
+            <a href="../../wissen/material/einleitung.html">
+                <div class="navItem" >
+                    <img class ="navIcon" src="../../assets/nav_icon/nav_wissen.svg">
+                    <p>Wissen</p>
+                </div>
+            </a>
+
+            <a href="../../sicherheit/kleidung.html">
+                <div class="navItem" id="navItemActive">
+                    <img class ="navIcon" src="../../assets/nav_icon/nav_sicherheit.svg">
+                    <p>Sicherheit</p>
+                </div>
+            </a>
+            
+            <a href="../diy/meditationsbank/schritt1.html">
+                <div class="navItem">
+                    <img class ="navIcon" src="../../assets/nav_icon/nav_diy.svg">
+                    <p>DIY</p>
+                </div>
+            </a>
+        </nav>
+    </header>
+    <main id="content">
+
+        <div id="popUp">
+            <img src="../../assets/popup/avatar.png">
+            <p>Befolge immer diese Prinzipien!</p>
+            <img id="closeButton" src="../../assets/button/button_close.svg" onclick="togglePopUp()">
+        </div>
+
+        <h1>Sicherheit</h1>
+        <div class="sicherheitMenu">
+            <button class="sicherheitButton" onclick="location.href='kleidung.html'">Kleidung</button>
+            <button class="sicherheitButton sicherheitButtonActive" onclick="location.href='prinzipien.html'">Prinzipien</button>
+            <button class="sicherheitButton" onclick="location.href='vorkehrungen.html'">Vorkehrungen</button>
+        </div>
+
+        <article>
+            <h2>Prinzipien</h2>
+            <figure>
+                <img id="headerImg" src="../assets/img/img_sicherheit_prinzipien.png">
+            </figure>
+            <p>Du weißt nun über die wichtigste Schutzbekleidung bescheid? Sehr gut! Lass uns zum Thema Sicherheitsprinzipien
+            weitergehen. Du solltest sowohl deine Umgebung, die Umwelt und natürlich dich selbst schützen, indem du die folgenden
+            Prinzipien befolgst</p>
+            
+            
+            <h3>1. Umgebungsschutz</h3>
+            <p>Achte während deinem Projekt unbedingt nicht nur auf deinen Arbeitstisch, sondern behalte auch deine Umgebung im Blick.
+            Befinden sich auch andere Leute im selben Raum, die nicht ausreichend geschützt sind? Steht jemand direkt hinter dir,
+            der etwas abbekommen könnte? Bleibe aufmerksam und sorge dafür, dass niemand zu schaden kommt.</p>
+            
+            <h3>2. Umweltschutz</h3>
+            <p>Wir alle wissen, dass unsere Umwelt ohnehin schon stark strapaziert ist. Achte deswegen unbedingt darauf, sie nicht noch
+            zusätzlich zu belasten, indem du die zum Beispiel Lackreste im Gebinde trocknen lässt und es dann erst wegschmeißt. Es
+            passiert auch oft, dass größere Lackreste übrig bleiben – gebe diese doch einfach an den Händler oder Hersteller zurück!
+            Schütte derartige Chemikalien unter keinen Umständen einfach in den Abfluss.</p>
+            
+            <h3>3. Selbstschutz</h3>
+            <p>Natürlich musst du auch dich selbst schützen! Beachte deine Position während der Arbeit, Werkstücke können immer
+            zurückgeschleudert werden und dich bei falscher Positionierung treffen. Nutze außerdem lieber scharfes Werkzeug um
+            Verkeilungen mit dem Werkstück zu vermeiden. Bei der Benutzung von Stichsägen solltest du das Sägeblatt außerdem nie
+            nach oben benutzen!</p><br>
+            
+            <p>Wenn du dich angemessen mit Schutzkleidung ausgestattet hast und diese Prinzipien befolgst, solltest du dich nur noch
+            mit den wichtigsten Sicherheitsvorkehrungen vertraut machen und dann kann es schon mit deinem ersten Projekt losgehen!</p>
+
+            <button id="contentBottomButton" onclick="location.href='vorkehrungen.html'">Nächstes Kapitel</button>
+        </article>
+    </main>
+    <footer>
+        <a href="../../impressum.html">Impressum</a>
+        <a href="../../datenschutz.html">Datenschutz</a>
+    </footer>
+</body>
+</html>

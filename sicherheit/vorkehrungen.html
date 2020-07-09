@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.typekit.net/ykg3zuk.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../functions.js"></script>
+    <title>Holzify | Sicherheitsvorkehrungen</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="../../assets/logo/holzify_logo.svg" onclick="location.href='../index.html'">
+        <nav>
+            <a href="../../index.html">
+                <div class="navItem">
+                    <img class ="navIcon" src="../../assets/nav_icon/nav_home.svg">
+                    <p>Start</p>
+                </div>
+            </a>
+
+            <a href="../../wissen/material/einleitung.html">
+                <div class="navItem" >
+                    <img class ="navIcon" src="../../assets/nav_icon/nav_wissen.svg">
+                    <p>Wissen</p>
+                </div>
+            </a>
+
+            <a href="../../sicherheit/kleidung.html">
+                <div class="navItem" id="navItemActive">
+                    <img class ="navIcon" src="../../assets/nav_icon/nav_sicherheit.svg">
+                    <p>Sicherheit</p>
+                </div>
+            </a>
+
+            <a href="../diy/meditationsbank/schritt1.html">
+                <div class="navItem">
+                    <img class ="navIcon" src="../../assets/nav_icon/nav_diy.svg">
+                    <p>DIY</p>
+                </div>
+            </a>
+        </nav>
+    </header>
+    <main id="content">
+
+        <div id="popUp">
+            <img src="../../assets/popup/avatar.png">
+            <p>Zuletzt noch die passenden Vorkehrungen treffen!</p>
+            <img id="closeButton" src="../../assets/button/button_close.svg" onclick="togglePopUp()">
+        </div>
+
+        <h1>Sicherheit</h1>
+        <div class="sicherheitMenu">
+            <button class="sicherheitButton" onclick="location.href='kleidung.html'">Kleidung</button>
+            <button class="sicherheitButton" onclick="location.href='prinzipien.html'">Prinzipien</button>
+            <button class="sicherheitButton sicherheitButtonActive" onclick="location.href='vorkehrungen.html'">Vorkehrungen</button>
+        </div>
+
+        <article>
+            <h2>Vorkehrungen</h2>
+            <figure>
+                <img id="headerImg" src="../assets/img/img_sicherheit_vorkehrungen.png">
+            </figure>
+            <p>Es gibt noch einige letzte Vorkehrungen die du treffen solltest, bevor du mit deinem Projekt loslegst! Es ist wichtig,
+            dass du eine vernünftige Arbeitsplatte oder Böcke nutzt. Hier solltest du nicht sparen, auf kosten der Stabilität und
+            Qualität – du wirst es dir im Nachhinein danken.</p><br>
+            
+            <p>Oft wird sehr viel Staub produziert, wenn du sägst oder schleifst. Am
+            besten saugst du diesen Staub direkt ab, während du arbeitest - so schützt du dich vor umherfliegendem Staub, der deine
+            Sicht verschlechtert. Wenn du Kreissägen für dein Projekt nutzt, achte auf jeden Fall darauf, einen Spaltkeil zu nutzen
+            und korrekt einzustellen, damit sich dein Werkstück nicht mit dem Sägeblatt verkeilt und dieses zum gefährlichen
+            Geschoss wird.</p><br>
+            
+            <p>Mit diesem ganzen neuen Wissen über Sicherheit bist du bestens gewappnet für dein erstes Holzprojekt! Gehe doch in die
+            Do-It-Yourself Sektion und suche dir eines der tollen Projekte aus. Wir wünschen dir sicheres und spaßiges Arbeiten!</p>
+
+            <button id="contentBottomButton" onclick="location.href='../diy/3d-test.html'">Zu deinem ersten Projekt</button>
+        </article>
+    </main>
+    <footer>
+        <a href="../../impressum.html">Impressum</a>
+        <a href="../../datenschutz.html">Datenschutz</a>
+    </footer>
+</body>
+</html>

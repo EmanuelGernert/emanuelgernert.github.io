@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.typekit.net/ykg3zuk.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../functions.js"></script>
+    <title>Holzify | Material Wissen</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="../../assets/logo/holzify_logo.svg" onclick="location.href='../../index.html'">
+        <nav>
+            <a href="../../index.html">
+                <div class="navItem">
+                    <img class ="navIcon" src="../../assets/nav_icon/nav_home.svg">
+                    <p>Start</p>
+                </div>
+            </a>
+
+            <a href="einleitung.html">
+                <div class="navItem" id="navItemActive">
+                    <img class ="navIcon" src="../../assets/nav_icon/nav_wissen.svg">
+                    <p>Wissen</p>
+                </div>
+            </a>
+
+            <a href="../../sicherheit/kleidung.html">
+                <div class="navItem">
+                    <img class ="navIcon" src="../../assets/nav_icon/nav_sicherheit.svg">
+                    <p>Sicherheit</p>
+                </div>
+            </a>
+
+            <a href="../../diy/meditationsbank/schritt1.html">
+                <div class="navItem">
+                    <img class ="navIcon" src="../../assets/nav_icon/nav_diy.svg">
+                    <p>DIY</p>
+                </div>
+            </a>
+        </nav>
+    </header>
+    <main id="content">
+
+        <div id="popUp">
+            <img src="../../assets/popup/avatar.png">
+            <p>Es gibt auch Plattenwerkstoffe als Alternative!</p>
+            <img id="closeButton" src="../../assets/button/button_close.svg" onclick="togglePopUp()">
+        </div>
+
+        <h1>Wissen</h1>
+        <div class="dropdownMenu">
+            <button class="dropdownButton dropdownActive" id="material" onclick="toggleDropdown(this.id)">Material &emsp; &#x25BC;</button>
+            <div class="dropdownBox" id="materialBox">
+                <div class="dropdownImage">
+                    <img src="../../assets/dropdown/dropdown_material.jpg"/>
+                </div>
+                <div class="dropdownContent">
+                    <a href="einleitung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">1</div>
+                            <div class="dropdownText">
+                                <p>Einleitung</p>
+                                <span>Worum geht es?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="massivholz.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">2</div>
+                            <div class="dropdownText">
+                                <p>Massivholz</p>
+                                <span>Massiv und stark ...</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="plattenwerkstoffe.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">3</div>
+                            <div class="dropdownText">
+                                <p>Plattenwerkstoffe</p>
+                                <span>oder leicht und vielseitig?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="quiz.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">4</div>
+                            <div class="dropdownText">
+                                <p>Quiz</p>
+                                <span>Teste dein Wissen!</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button class="dropdownButton" id="werkzeug" onclick="toggleDropdown(this.id)">Werkzeug &emsp; &#x25BC;</button>
+            <div class="dropdownBox" id="werkzeugBox">
+                <div class="dropdownImage">
+                    <img src="../../assets/dropdown/dropdown_werkzeug.jpg"/>
+                </div>
+                <div class="dropdownContent">
+                    <a href="../werkzeug/einleitung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">1</div>
+                            <div class="dropdownText">
+                                <p>Einleitung</p>
+                                <span>Worum geht es?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../werkzeug/holzbearbeitung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">2</div>
+                            <div class="dropdownText">
+                                <p>Holzbearbeitung</p>
+                                <span>Lieber elektrisch oder doch von Hand?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../werkzeug/hilfsmittel.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">3</div>
+                            <div class="dropdownText">
+                                <p>Hilfsmittel</p>
+                                <span>Kleine Helfer der Holzbearbeitung</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../werkzeug/oberflaechenbehandlung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">4</div>
+                            <div class="dropdownText">
+                                <p>Oberflächenbehandlung</p>
+                                <span>Aus rau wird fein</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../werkzeug/quiz.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">5</div>
+                            <div class="dropdownText">
+                                <p>Quiz</p>
+                                <span>Teste dein Wissen!</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button class="dropdownButton" id="techniken" onclick="toggleDropdown(this.id)">Techniken &emsp; &#x25BC;</button>
+            <div class="dropdownBox" id="technikenBox">
+                <div class="dropdownImage">
+                    <img src="../../assets/dropdown/dropdown_techniken.jpg"/>
+                </div>
+                <div class="dropdownContent">
+                    <a href="../techniken/einleitung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">1</div>
+                            <div class="dropdownText">
+                                <p>Einleitung</p>
+                                <span>Worum geht es?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../techniken/holzverbindungen.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">2</div>
+                            <div class="dropdownText">
+                                <p>Holzverbindungen</p>
+                                <span>Zapfen, Schlitz und mehr</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../techniken/oberflaechenbehandlung.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">3</div>
+                            <div class="dropdownText">
+                                <p>Oberflächenbehandlung</p>
+                                <span>Wachsen, Ölen oder doch Lackieren?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../techniken/quiz.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">4</div>
+                            <div class="dropdownText">
+                                <p>Quiz</p>
+                                <span>Teste dein Wissen!</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <article>
+            <h2>3. Plattenwerkstoffe</h2>
+            <figure>
+                <img id="headerImg" src="../../assets/img/img_wissen_material_plattenwerkstoffe.png">
+            </figure>
+            <p>Abgesehen von Massivholz gibt es noch ein weiteres relevantes Material, Plattenwerkstoffe. Gegenüber Massivholz bieten
+            sie sowohl Vorteile als auch Nachteile. Positiv ist, dass Plattenwerkstoffe in der Regel günstiger sind als Massivholz.
+            Sie zeigen wenig bis garkein Schwind- und Quellverhalte, welches im vorherhigen Kapitel (Massivholz) erklärt wurde.
+            Außerdem sind verschiedene Dekore möglich, beispielsweise Weißlack, Kunststoffbeschichtung in verschiedenen Farben,
+            Holzoptik, perfekt glatte bzw. eingeprägte Strukturen oder Holzfurnier. Natürlich haben die Plattenwerkstoffe aber auch
+            Nachteile gegenüber Massivholz, unter anderem die teilweise kompliziertere Verarbeitung für die Privatnutzung.</p>
+            
+            <p>Im folgenden wird speziell auf die wichtigsten Plattenwerkstoffe Span, Multiplex, Dreischicht und MDF eingegangen.</p>
+            
+            <h3>1. Spanplatte</h3>
+            <p>Die Spanplatte besteht eigentlich aus sehr kleinen Holzstückchen, die als Platte verleimt werden. Sie existiert als rohe
+            Platte (nur aus Spänen) oder mit verschiedenen Oberflächen (meist Melaninbeschichtung, also Kunststoff). Das Holz
+            arbeitet sehr wenig, ist dementsprechend auch relativ stabil (trotzdem aufpassen, die Ecken können leicht abplatzen!).
+            Außerdem ist die Spanplatte sehr günstig. Beachte aber, dass sie eher kompliziert zu verarbeiten ist – du brauchst
+            nämlich Anleimer (Kantenabdeckungen, um die eher unschöne Spanplattenkante zu verstecken).</p>
+            
+            <h3>2. MDF</h3>
+            <p>Eine MDF-Platte besteht aus Holzfasern, die zu einer Platte verklebt werden. Auch MDF arbeitet sehr wenig, genauso wie
+            die Spanplatte. Sie ist eher mäßig stabil, dafür aber auch sehr einfach zu verarbeiten. Da die Oberfläche bereits
+            ziemlich fein ist, ist sie außerdem gut lackierbar!</p>
+            
+            
+            <h3>3. Multiplex</h3>
+            <p>Multiplex-Platten bestehen (wie der Name bereits erahnen lässt) aus mehreren dünnen Holzplatten, die aufeinander geleimt
+            wurden. Das sorgt für eine sehr hohe Stabilität und erneut wenig Arbeiten des Holzes. Oft wird Multiplex als
+            Konstruktionsholz oder zur Stabilisierung eines Möbelstücks verwendet.</p>
+            
+            <h3>4. Dreischicht</h3>
+            <p>Die Dreischicht-Platte besteht aus zwei Deckschichten, die eine Schicht aus Holzstäben umfassen. Sie ist sehr stabil und
+            arbeitet genauso wenig, wie die meisten anderen Plattenwerkstoffe. Auch Dekore ist möglich (z. B. Holzfurnier).</p>
+            
+            <p>Es gibt zwar noch viele weitere Materialien, deren Bearbeitung aber für den Privatbereich eher zu kompliziert sind. Wenn
+            du dich dafür interessierst, statte auf jeden fall bei deinem nächsten Baumarkt Besuch der Holzabteilung einen Besuch ab
+            und sehe dich um!</p>
+
+            <button id="contentBottomButton" onclick="location.href='quiz.html'">Zum Quiz</button>
+        </article>
+    </main>
+    <footer>
+        <a href="../../impressum.html">Impressum</a>
+        <a href="../../datenschutz.html">Datenschutz</a>
+    </footer>
+</body>
+</html>
