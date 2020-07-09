@@ -659,8 +659,8 @@ em {
 /* 3D Viewer */
 
 #content .modelviewer {
-  /* width: 100%;
-  height: 80%; */
+  width: 100%;
+  /*height: 80%; */
   border-radius: var(--radius-small);
   --progress-bar-color: var(--white);
   margin-top: 3rem;
