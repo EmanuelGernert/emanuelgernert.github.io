@@ -656,20 +656,13 @@ em {
   font-style: normal;
 }
 
-
 /* 3D Viewer */
 
 .modelviewer {
-  width: inherit;
-  height: inherit;
   border-radius: var(--radius-small);
   --progress-bar-color: var(--white);
   margin-top: 3rem;
   margin-bottom: 3rem;
   background-color: var(--lightgray);
-}
-
-.viewerContainer {
-  width: inherit;
-  height: 80%;
+  width: 100%;
 }
