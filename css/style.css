@@ -658,15 +658,12 @@ em {
 
 /* 3D Viewer */
 
-.modelviewer {
-  background-color: var(--lightgray);
-}
-
 #content .modelviewer {
-  width: 100%;
-  height: 80%;
+  /* width: 100%;
+  height: 80%; */
   border-radius: var(--radius-small);
   --progress-bar-color: white;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  background-color: var(--lightgray);
 }
