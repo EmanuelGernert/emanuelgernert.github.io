@@ -9,6 +9,8 @@
   --white: #fff;
   --black: #000;
   --lightgray: #f5f5f5;
+  --highlight-1: lightsalmon;
+  --highlight-2: #91c6e0;
   
   /* Radius */
   --radius-small: 1rem;
@@ -31,8 +33,7 @@
   margin: 0;
 }
 
-html,
-body {
+html, body{
   margin: 0;
   padding: 0;
   height: 100%;
@@ -73,7 +74,7 @@ p {
 h1 {
   font-weight: var(--bold);
   font-size: 4rem;
-  color: var(--dark-brown);
+  color: var(--highlight-2);
 }
 
 h2 {
@@ -111,7 +112,7 @@ header {
   flex-direction: column;
   align-items: center;
   background: var(--brown-gradient);
-  height: 100vh;
+  height: 100%;
   width: 13vw;
   z-index: 99;
 }
@@ -217,14 +218,23 @@ footer a:first-child {
   height: 100%;
 }
 
+.welcome h4 {
+  display: none;
+}
+
 .welcome {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+.roundButton {
+  margin-top: 1rem;
+}
+
 .startScreenBox:hover {
   background-color: var(--light-brown-2);
+  transition-duration: .5s;
 }
 
 .startScreenBox:not(.welcome){
@@ -234,30 +244,27 @@ footer a:first-child {
 }
 
 .buttonRight {
-  width: 17%;
+  width: 15%;
 }
 
-.buttonRight:hover {
-  opacity: 80%;
-}
 
 .projectImage {
   position: absolute;
 }
 
 .headphone {
-  transform: translate(-130px, 0px);
-  width: 50%;
+  transform: translate(-40px, 0px);
+  width: 30%;
 }
 
 .stand {
-  width: 45% !important;
-  transform: translate(-110px, 20px);
+  width: 40% !important;
+  transform: translate(-85px, 30px);
 }
 
 .meditation {
-  width: 35% !important;
-  transform: translate(-80px, -5px);
+  width: 30% !important;
+  transform: translate(-50px, -5px);
 }
 
 button {
@@ -305,34 +312,42 @@ button:hover {
 
 @media(min-width: 1200px) {
   .headphone {
-    transform: translate(-160px, -10px);
-    width: 50% !important;
+    transform: translate(-70px, 20px);
+    width: 35% !important;
   }
 
   .stand {
-    transform: translate(-125px, 15px);
+    transform: translate(-100px, 30px);
   }
   
   .meditation {
-    transform: translate(-80px, -20px);
-    width: 35% !important;
+    transform: translate(-50px, -15px);
+    width: 30% !important;
+  }
+
+  .welcome h4 {
+    display: block;
   }
 }
 
 @media(min-width: 1500px) {
   .headphone {
-    transform: translate(-100px, 30px);
-    width: 40% !important;
+    transform: translate(30px, 40px);
+    width: 25% !important;
   }
 
   .stand {
-    transform: translate(-90px, 50px);
-    width: 40% !important;
+    transform: translate(-10px, 50px);
+    width: 30% !important;
   }
   
   .meditation {
-    transform: translate(-50px, 10px);
-    width: 30% !important;
+    transform: translate(-0px, 30px);
+    width: 25% !important;
+  }
+
+  .welcome h4 {
+    display: block;
   }
 }
 
@@ -351,6 +366,9 @@ button:hover {
   width: calc((40rem - 4.4rem) / 3);
   flex-direction: column;
   align-items: center;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  padding-bottom: 1rem;
 }
 
 .dropdownButton:nth-of-type(2) {
@@ -359,7 +377,7 @@ button:hover {
 }
 
 .dropdownButton img {
-  width: inherit;
+  width: 60%;
 }
 
 .dropdownActive {
@@ -499,6 +517,7 @@ button:hover {
 /* Pop-Up */
 
 #popUp {
+  z-index: 100;
   position: fixed;
   display: flex;
   flex-direction: row;
@@ -722,7 +741,6 @@ em {
   --progress-bar-color: var(--white);
   margin-top: 3rem;
   margin-bottom: 3rem;
-  z-index: -100;
   background-color: var(--lightgray);
   width: 100%;
 } 
