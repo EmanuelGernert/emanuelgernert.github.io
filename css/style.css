@@ -39,6 +39,7 @@ html, body{
   height: 100%;
   display: block;
   font-family: Ebony;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -73,7 +74,7 @@ p {
 
 h1 {
   font-weight: var(--bold);
-  font-size: 4rem;
+  font-size: 4.5rem;
   color: var(--highlight-2);
 }
 
@@ -743,10 +744,17 @@ em {
   margin-bottom: 3rem;
   background-color: var(--lightgray);
   width: 100%;
+  height: 15rem;
 } 
+
+.modelviewer #viewerIcon {
+  padding: 2rem;
+  width: 7rem;
+}
 
 @media(min-width: 1300px) {
   .modelviewer {
-    height: 80%;
+    height: 25rem;
   }
 }
+

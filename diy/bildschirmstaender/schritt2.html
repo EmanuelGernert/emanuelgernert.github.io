@@ -9,7 +9,7 @@
     <script src="../../functions.js"></script>  
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-    <title>Holzify | DIY Meditationsbank</title>
+    <title>Holzify | DIY Bildschirmständer</title>
 </head>
 <body>
     <header>
@@ -36,7 +36,7 @@
                 </div>
             </a>
 
-            <a href="schritt1.html">
+            <a href="../meditationsbank/schritt1.html">
                 <div class="navItem" id="navItemActive">
                     <img class ="navIcon" src="../../assets/nav_icon/nav_diy.svg">
                     <p>DIY</p>
@@ -48,18 +48,73 @@
 
         <div id="popUp">
             <img src="../../assets/popup/avatar.png">
-            <p>Bist du bereit für dein erstes eigenes Projekt, die Holzify Meditationsbank? Lass uns loslegen!</p>
+            <p>Noch sind die Schubladen leer, aber du wirst bestimmt den passenden Inhalt finden!</p>
             <img id="closeButton" src="../../assets/button/button_close.svg" onclick="togglePopUp()">
         </div>
 
         <h1>Do-It-Yourself</h1>
         <div class="dropdownMenu">
-            <button class="dropdownButton dropdownActive" id="meditationsbank" onclick="toggleDropdown(this.id)">
+            <button class="dropdownButton" id="meditationsbank" onclick="toggleDropdown(this.id)">
                 <img src="../../assets/img/img_meditationsbank_imButton.png">
                 Meditationsbank &emsp; &#x25BC;</button>
             <div class="dropdownBox" id="meditationsbankBox">
                 <div class="dropdownImageDiy">
                     <img src="../../assets/img/img_meditationsbank_zugeschnitten.png"/>
+                </div>
+                <div class="dropdownContent">
+                    <a href="../meditationsbank/schritt1.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">1</div>
+                            <div class="dropdownText">
+                                <p>Projektstart</p>
+                                <span>Was brauchst du für dieses Projekt?</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../meditationsbank/schritt2.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">2</div>
+                            <div class="dropdownText">
+                                <p>Beine anschrägen</p>
+                                <span>Für die angenehme Sitzposition</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../meditationsbank/schritt3.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">3</div>
+                            <div class="dropdownText">
+                                <p>Abschleifen</p>
+                                <span>Es wird zur runden Sache</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../meditationsbank/schritt4.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">4</div>
+                            <div class="dropdownText">
+                                <p>Verbindung der Einzelteile</p>
+                                <span>Eine Meditationsbank entsteht</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../meditationsbank/schritt5.html">
+                        <div class="dropdownChapter">
+                            <div class="dropdownCircle">5</div>
+                            <div class="dropdownText">
+                                <p>Abschluss</p>
+                                <span>Der letzte Feinschliff</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button class="dropdownButton dropdownActive" id="bildschirmstaender" onclick="toggleDropdown(this.id)">
+                <img src="../../assets/img/img_bildschirmstaender_zugeschnitten_imButton.png">
+                Bildschirmständer &emsp; &#x25BC;</button>
+            <div class="dropdownBox" id="bildschirmstaenderBox">
+                <div class="dropdownImageDiy">
+                    <img src="../../assets/img/img_bildschirmstaender_zugeschnitten.png"/>
                 </div>
                 <div class="dropdownContent">
                     <a href="schritt1.html">
@@ -75,67 +130,12 @@
                         <div class="dropdownChapter">
                             <div class="dropdownCircle">2</div>
                             <div class="dropdownText">
-                                <p>Beine anschrägen</p>
-                                <span>Für die angenehme Sitzposition</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="schritt3.html">
-                        <div class="dropdownChapter">
-                            <div class="dropdownCircle">3</div>
-                            <div class="dropdownText">
-                                <p>Abschleifen</p>
-                                <span>Es wird zur runden Sache</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="schritt4.html">
-                        <div class="dropdownChapter">
-                            <div class="dropdownCircle">4</div>
-                            <div class="dropdownText">
-                                <p>Verbindung der Einzelteile</p>
-                                <span>Eine Meditationsbank entsteht</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="schritt5.html">
-                        <div class="dropdownChapter">
-                            <div class="dropdownCircle">5</div>
-                            <div class="dropdownText">
-                                <p>Abschluss</p>
-                                <span>Der letzte Feinschliff</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <button class="dropdownButton" id="bildschirmstaender" onclick="toggleDropdown(this.id)">
-                <img src="../../assets/img/img_bildschirmstaender_zugeschnitten_imButton.png">
-                Bildschirmständer &emsp; &#x25BC;</button>
-            <div class="dropdownBox" id="bildschirmstaenderBox">
-                <div class="dropdownImageDiy">
-                    <img src="../../assets/img/img_bildschirmstaender_zugeschnitten.png"/>
-                </div>
-                <div class="dropdownContent">
-                    <a href="../bildschirmstaender/schritt1.html">
-                        <div class="dropdownChapter">
-                            <div class="dropdownCircle">1</div>
-                            <div class="dropdownText">
-                                <p>Projektstart</p>
-                                <span>Was brauchst du für dieses Projekt?</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="../bildschirmstaender/schritt2.html">
-                        <div class="dropdownChapter">
-                            <div class="dropdownCircle">2</div>
-                            <div class="dropdownText">
                                 <p>Schubladen</p>
                                 <span>Beginne mit der Schublade</span>
                             </div>
                         </div>
                     </a>
-                    <a href="../bildschirmstaender/schritt3.html">
+                    <a href="schritt3.html">
                         <div class="dropdownChapter">
                             <div class="dropdownCircle">3</div>
                             <div class="dropdownText">
@@ -144,7 +144,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="../bildschirmstaender/schritt4.html">
+                    <a href="schritt4.html">
                         <div class="dropdownChapter">
                             <div class="dropdownCircle">4</div>
                             <div class="dropdownText">
@@ -213,32 +213,41 @@
             </div>
         </div>
         <article>
-            <h2>1. Projektstart</h2>
+            <h2>2. Schubladen</h2>
 
-            <model-viewer class="modelviewer" shadow-intensity=".4" camera-controls autoplay src="../../assets/3d/meditationsbank.glb" auto-rotate alt="3D Modell Meditationsbank"
-            ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" ios-src="../../assets/3d/meditationsbank.usdz"><img id="viewerIcon" src="../../assets/3d/3d_icon.svg"></model-viewer>
+            <model-viewer class="modelviewer" shadow-intensity=".4" camera-controls autoplay src="../../assets/3d/Monitorstaender.glb" auto-rotate alt="3D Modell Bildschirmständer"
+            ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" ios-src="../../assets/3d/Monitorstaender.usdz"><img id="viewerIcon" src="../../assets/3d/3d_icon.svg"></model-viewer>
 
-            <p>Du hast dich also dafür entschieden deine eigene Meditationsbank zu bauen. Diese kann dir dabei helfen optimal während
-            deiner Meditation zu entspannen. Durch den eingebauten Klappmechanismus der Beine kann sie außerdem leicht transportiert
-            und verstaut werden.</p>
+            <p> Schon kann es losgehen! Fangen wir mit den Grifföffnungen der Schubladen an. Hierfür benötigst du das Holzbrett A. 
+                Bei einer solchen runden Öffnung, kann beispielsweise eine umgedrehte Tasse als Schablone dienen. 
+                Sei kreativ! Die Größe kannst du frei nach deinen Bedürfnissen hin anpassen. Nachdem du die Öffnung aufgezeichnest hast, 
+                musst du diese nur noch mit Hilfe einer Hand- oder Stichsäge aussägen.</p>
             
-            <h3>Welche Werkzeuge werden benötigt?</h3>
-            <p>
-                – Stift, Papier und Schere<br>
-                – Handsäge<br>
-                – Akkuschrauber<br>
-                – 16x Schrauben<br>
-                – 2x klappbare Scharniere<br>
-                – Holzlack<br>
-            </p>
-            
-            <h3>Welches Material wird benötigt?</h3>
-            <p>Du brauchst insgesamt drei Holzbretter mit den Maßen aus der untenstehenden Grafik. Die Wahl des Materials liegt aber
-            bei dir! Entscheide dich gerne für das Holz, dass dir persönlich am besten gefällt oder das am besten zu deiner Einrichtung passt! Dann mal ran an die Arbeit!</p>
-                
-            <h3 style="color: red;">– Render Holzbretter mit Maß –</h3>
+            <h3 style="color: red;">– Render Öffnung –</h3>
 
-            <button id="contentBottomButton" onclick="location.href='schritt2.html'">Nächster Schritt</button>
+            <p> Danach kannst du die Kanten mit einem Schleifpapier abrunden. Als nächstes sägst du dir an beiden Enden des Brettes eine Fuge zurecht. 
+                An diesen Stellen werden später die Bretter miteinander verbunden. Danach die Flächen und Kanten erneut mit Schleifpapier bearbeiten. 
+                Zur Orientierung dienen folgende Skizze und Animation.</p>
+
+            <h3 style="color: red;">– Skizze –</h3>
+            <h3 style="color: red;">– Animation Monitorständer 1 –</h3>
+
+            <p>Für die Rückseite der Schublade kannst du Schritt 2 einfach wiederholen. Diesmal jedoch an dem Brett B.</p>
+
+            <h3 style="color: red;">– Render Rückseite –</h3>
+            
+            <p> Nun musst du nur noch die Bretter A,B,C,D und E miteinander verbinden. Achte darauf, dass du auf alle Kontaktflächen der Bretter ausreichend Holzleim gibst,
+                damit deine Schublade nach dem Trocknen auch stabil ist. Für genaue Angaben liest du dir am besten die Verpackungsbeilage des Leims durch. 
+                Starte am besten mit der Bodenfläche E und füge nacheinander die Seitenbretter hinzu. </p>
+
+            <h3 style="color: red;">– Animation Monitorständer 2 –</h3>
+
+            <p>Und fertig ist deine erste Schublade! Die Schritte 1 bis 4 kannst du nun für die zweite Schublade wiederholen.</p>
+
+            <h3 style="color: red;">– Render Schubladen –</h3>
+
+            <button id="contentBottomButton" onclick="location.href='schritt3.html'">Nächster Schritt</button>
+
 
         </article>
     </main>

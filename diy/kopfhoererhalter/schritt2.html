@@ -9,7 +9,7 @@
     <script src="../../functions.js"></script>  
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-    <title>Holzify | DIY Meditationsbank</title>
+    <title>Holzify | DIY Kopfhörerhalter</title>
 </head>
 <body>
     <header>
@@ -36,7 +36,7 @@
                 </div>
             </a>
 
-            <a href="schritt1.html">
+            <a href="../meditationsbank/schritt1.html">
                 <div class="navItem" id="navItemActive">
                     <img class ="navIcon" src="../../assets/nav_icon/nav_diy.svg">
                     <p>DIY</p>
@@ -48,13 +48,13 @@
 
         <div id="popUp">
             <img src="../../assets/popup/avatar.png">
-            <p>Bist du bereit für dein erstes eigenes Projekt, die Holzify Meditationsbank? Lass uns loslegen!</p>
+            <p>Wir fangen direkt mit dem wichtigsten Teil an, nämlich der Grundform.</p>
             <img id="closeButton" src="../../assets/button/button_close.svg" onclick="togglePopUp()">
         </div>
 
         <h1>Do-It-Yourself</h1>
         <div class="dropdownMenu">
-            <button class="dropdownButton dropdownActive" id="meditationsbank" onclick="toggleDropdown(this.id)">
+            <button class="dropdownButton" id="meditationsbank" onclick="toggleDropdown(this.id)">
                 <img src="../../assets/img/img_meditationsbank_imButton.png">
                 Meditationsbank &emsp; &#x25BC;</button>
             <div class="dropdownBox" id="meditationsbankBox">
@@ -62,7 +62,7 @@
                     <img src="../../assets/img/img_meditationsbank_zugeschnitten.png"/>
                 </div>
                 <div class="dropdownContent">
-                    <a href="schritt1.html">
+                    <a href="../meditationsbank/schritt1.html">
                         <div class="dropdownChapter">
                             <div class="dropdownCircle">1</div>
                             <div class="dropdownText">
@@ -71,7 +71,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="schritt2.html">
+                    <a href="../meditationsbank/schritt2.html">
                         <div class="dropdownChapter">
                             <div class="dropdownCircle">2</div>
                             <div class="dropdownText">
@@ -80,7 +80,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="schritt3.html">
+                    <a href="../meditationsbank/schritt3.html">
                         <div class="dropdownChapter">
                             <div class="dropdownCircle">3</div>
                             <div class="dropdownText">
@@ -89,7 +89,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="schritt4.html">
+                    <a href="../meditationsbank/schritt4.html">
                         <div class="dropdownChapter">
                             <div class="dropdownCircle">4</div>
                             <div class="dropdownText">
@@ -98,7 +98,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="schritt5.html">
+                    <a href="../meditationsbank/schritt5.html">
                         <div class="dropdownChapter">
                             <div class="dropdownCircle">5</div>
                             <div class="dropdownText">
@@ -155,7 +155,7 @@
                     </a>
                 </div>
             </div>
-            <button class="dropdownButton" id="kopfhoererhalter" onclick="toggleDropdown(this.id)">
+            <button class="dropdownButton dropdownActive" id="kopfhoererhalter" onclick="toggleDropdown(this.id)">
                 <img src="../../assets/img/img_kopfhoererhalter_zugeschnitten_imButton.png">
                 Kopfhörerhalter &emsp; &#x25BC;</button>
             <div class="dropdownBox" id="kopfhoererhalterBox">
@@ -163,7 +163,7 @@
                     <img src="../../assets/img/img_kopfhoererhalter_zugeschnitten.png"/>
                 </div>
                 <div class="dropdownContent">
-                    <a href="../kopfhoererhalter/schritt1.html">
+                    <a href="schritt1.html">
                         <div class="dropdownChapter">
                             <div class="dropdownCircle">1</div>
                             <div class="dropdownText">
@@ -172,7 +172,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="../kopfhoererhalter/schritt2.html">
+                    <a href="schritt2.html">
                         <div class="dropdownChapter">
                             <div class="dropdownCircle">2</div>
                             <div class="dropdownText">
@@ -181,7 +181,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="../kopfhoererhalter/schritt3.html">
+                    <a href="schritt3.html">
                         <div class="dropdownChapter">
                             <div class="dropdownCircle">3</div>
                             <div class="dropdownText">
@@ -190,7 +190,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="../kopfhoererhalter/schritt4.html">
+                    <a href="schritt4.html">
                         <div class="dropdownChapter">
                             <div class="dropdownCircle">4</div>
                             <div class="dropdownText">
@@ -199,7 +199,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="../kopfhoererhalter/schritt5.html">
+                    <a href="schritt5.html">
                         <div class="dropdownChapter">
                             <div class="dropdownCircle">5</div>
                             <div class="dropdownText">
@@ -213,32 +213,28 @@
             </div>
         </div>
         <article>
-            <h2>1. Projektstart</h2>
+            <h2>2. Hauptform</h2>
 
-            <model-viewer class="modelviewer" shadow-intensity=".4" camera-controls autoplay src="../../assets/3d/meditationsbank.glb" auto-rotate alt="3D Modell Meditationsbank"
-            ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" ios-src="../../assets/3d/meditationsbank.usdz"><img id="viewerIcon" src="../../assets/3d/3d_icon.svg"></model-viewer>
+            <model-viewer class="modelviewer" shadow-intensity=".4" camera-controls autoplay src="../../assets/3d/Kopfhoererhalter.glb" auto-rotate alt="3D Modell Kopfhörerhalter"
+            ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" ios-src="../../assets/3d/Kopfhoererhalter.usdz"><img id="viewerIcon" src="../../assets/3d/3d_icon.svg"></model-viewer>
 
-            <p>Du hast dich also dafür entschieden deine eigene Meditationsbank zu bauen. Diese kann dir dabei helfen optimal während
-            deiner Meditation zu entspannen. Durch den eingebauten Klappmechanismus der Beine kann sie außerdem leicht transportiert
-            und verstaut werden.</p>
+            <p>Und schon kann es losgehen! Zeichne dir zunächst die folgende Vorlage auf ein Papier ab und schneide sie mit einer Schere aus.  </p>
             
-            <h3>Welche Werkzeuge werden benötigt?</h3>
-            <p>
-                – Stift, Papier und Schere<br>
-                – Handsäge<br>
-                – Akkuschrauber<br>
-                – 16x Schrauben<br>
-                – 2x klappbare Scharniere<br>
-                – Holzlack<br>
-            </p>
-            
-            <h3>Welches Material wird benötigt?</h3>
-            <p>Du brauchst insgesamt drei Holzbretter mit den Maßen aus der untenstehenden Grafik. Die Wahl des Materials liegt aber
-            bei dir! Entscheide dich gerne für das Holz, dass dir persönlich am besten gefällt oder das am besten zu deiner Einrichtung passt! Dann mal ran an die Arbeit!</p>
+            <h3 style="color: red;">– Illustration Skizze –</h3>
+
+            <p> Lege nun die Vorlage auf den Holzblock A und säge diesen entlang der Außenkanten zurecht. Die Kanten kannst du dir zuerst auch mit einem Bleistift anzeichnen. </p>
                 
-            <h3 style="color: red;">– Render Holzbretter mit Maß –</h3>
+            <h3 style="color: red;">– Animation Kopfhörerhalter 1 –</h3>
 
-            <button id="contentBottomButton" onclick="location.href='schritt2.html'">Nächster Schritt</button>
+            <p> Anschließend bearbeitest du die gesägten Kanten und Flächen mit einem Schleifpapier. Somit vermeidest di Splitter und scharfe Kanten.
+                Als nächstes kümmerst du dich um die Einkerbung auf der später dein Kopfhörerbügel liegen wird.</p><br>
+                
+            <p>Die hierfür vorgesehene Breite misst du am besten von deinem eigenen Kopfhörer ab. Zur Bearbeitung benötigst du eine (kleine) 
+               Handsäge und ein Stemmeisen. Und auch hier wieder fleißig mit dem Schleifpapier nacharbeiten.</p>
+
+            <h3 style="color: red;">– Animation Kopfhörerhalter 2 –</h3>
+
+            <button id="contentBottomButton" onclick="location.href='schritt3.html'">Nächster Schritt</button>
 
         </article>
     </main>
