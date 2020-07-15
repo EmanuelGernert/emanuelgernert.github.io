@@ -56,9 +56,9 @@
 
         <h1>Do-It-Yourself</h1>
         <div class="dropdownMenu">
-            <button class="dropdownButton" id="meditationsbank" onclick="toggleDropdown(this.id)">
-                <img src="../../assets/img/img_meditationsbank_imButton.png">
-                Meditationsbank &emsp; &#x25BC;</button>
+            <button class="dropdownButton diyDropdownButton" id="meditationsbank" onclick="toggleDropdown(this.id)">
+                <span class="dropdownLabel">Meditationsbank &emsp; &#x25BC;</span>
+            </button>
             <div class="dropdownBox" id="meditationsbankBox">
                 <div class="dropdownImageDiy">
                     <img src="../../assets/img/img_meditationsbank_zugeschnitten.png"/>
@@ -111,9 +111,9 @@
                     </a>
                 </div>
             </div>
-            <button class="dropdownButton dropdownActive" id="bildschirmstaender" onclick="toggleDropdown(this.id)">
-                <img src="../../assets/img/img_bildschirmstaender_zugeschnitten_imButton.png">
-                Bildschirmständer &emsp; &#x25BC;</button>
+            <button class="dropdownButton diyDropdownButton dropdownActive" id="bildschirmstaender" onclick="toggleDropdown(this.id)">
+                <span class="dropdownLabel">Bildschirmständer &emsp; &#x25BC;</span>
+            </button>
             <div class="dropdownBox" id="bildschirmstaenderBox">
                 <div class="dropdownImageDiy">
                     <img src="../../assets/img/img_bildschirmstaender_zugeschnitten.png"/>
@@ -157,9 +157,9 @@
                     </a>
                 </div>
             </div>
-            <button class="dropdownButton" id="kopfhoererhalter" onclick="toggleDropdown(this.id)">
-                <img src="../../assets/img/img_kopfhoererhalter_zugeschnitten_imButton.png">
-                Kopfhörerhalter &emsp; &#x25BC;</button>
+            <button class="dropdownButton diyDropdownButton" id="kopfhoererhalter" onclick="toggleDropdown(this.id)">
+                <span class="dropdownLabel">Kopfhörerhalter &emsp; &#x25BC;</span>
+            </button>
             <div class="dropdownBox" id="kopfhoererhalterBox">
                 <div class="dropdownImageDiy">
                     <img src="../../assets/img/img_kopfhoererhalter_zugeschnitten.png"/>
@@ -225,18 +225,21 @@
                 Sei kreativ! Die Größe kannst du frei nach deinen Bedürfnissen hin anpassen. Nachdem du die Öffnung aufgezeichnest hast, 
                 musst du diese nur noch mit Hilfe einer Hand- oder Stichsäge aussägen.</p>
             
-            <h3 style="color: red;">– Render Öffnung –</h3>
+            <img class="diyImg" src="../../assets/diy_bilder/Monitorständer_Öffnung.jpg">
 
             <p> Danach kannst du die Kanten mit einem Schleifpapier abrunden. Als nächstes sägst du dir an beiden Enden des Brettes eine Fuge zurecht. 
                 An diesen Stellen werden später die Bretter miteinander verbunden. Danach die Flächen und Kanten erneut mit Schleifpapier bearbeiten. 
                 Zur Orientierung dienen folgende Skizze und Animation.</p>
 
-            <h3 style="color: red;">– Skizze –</h3>
-            <h3 style="color: red;">– Animation Monitorständer 1 –</h3>
+            <div style="display: flex; flex-direction: row;">
+                <img class="diyImg" style="width: 34%; margin-right: 2rem;" src="../../assets/diy_bilder/Monitorständer_Seite_Skizze.jpg">
+                <img class="diyImg" style="width: 34%;" src="../../assets/diy_bilder/Monitorständer_Seite_Skizze.jpg">
+            </div>
+
 
             <p>Für die Rückseite der Schublade kannst du Schritt 2 einfach wiederholen. Diesmal jedoch an dem Brett B.</p>
 
-            <h3 style="color: red;">– Render Rückseite –</h3>
+            <img class="diyImg" src="../../assets/diy_bilder/Monitorständer_Rückseite.jpg">
             
             <p> Nun musst du nur noch die Bretter A,B,C,D und E miteinander verbinden. Achte darauf, dass du auf alle Kontaktflächen der Bretter ausreichend Holzleim gibst,
                 damit deine Schublade nach dem Trocknen auch stabil ist. Für genaue Angaben liest du dir am besten die Verpackungsbeilage des Leims durch. 
@@ -246,7 +249,7 @@
 
             <p>Und fertig ist deine erste Schublade! Die Schritte 1 bis 4 kannst du nun für die zweite Schublade wiederholen.</p>
 
-            <h3 style="color: red;">– Render Schubladen –</h3>
+            <img class="diyImg" src="../../assets/diy_bilder/Monitorständer_Schublade.jpg"><br>
 
             <button id="contentBottomButton" onclick="location.href='schritt3.html'">Nächster Schritt</button>
 

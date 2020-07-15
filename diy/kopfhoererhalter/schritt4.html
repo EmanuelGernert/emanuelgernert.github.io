@@ -50,15 +50,15 @@
 
         <div id="popUp">
             <img src="../../assets/popup/avatar.png">
-            <p>Eine stabile Basis sorgt für eine höhere Qualität des Kopfhörerhalters! Er soll schließlich nicht umkippen.</p>
+            <p>Eine stabile Basis sorgt dafür, dass dein Kopfhörerhalter nicht umkippt.</p>
             <img id="closeButton" src="../../assets/button/button_close.svg" onclick="togglePopUp()">
         </div>
 
         <h1>Do-It-Yourself</h1>
         <div class="dropdownMenu">
-            <button class="dropdownButton" id="meditationsbank" onclick="toggleDropdown(this.id)">
-                <img src="../../assets/img/img_meditationsbank_imButton.png">
-                Meditationsbank &emsp; &#x25BC;</button>
+            <button class="dropdownButton diyDropdownButton" id="meditationsbank" onclick="toggleDropdown(this.id)">
+                
+                <span class="dropdownLabel">Meditationsbank &emsp; &#x25BC;</span></button>
             <div class="dropdownBox" id="meditationsbankBox">
                 <div class="dropdownImageDiy">
                     <img src="../../assets/img/img_meditationsbank_zugeschnitten.png"/>
@@ -111,9 +111,9 @@
                     </a>
                 </div>
             </div>
-            <button class="dropdownButton" id="bildschirmstaender" onclick="toggleDropdown(this.id)">
-                <img src="../../assets/img/img_bildschirmstaender_zugeschnitten_imButton.png">
-                Bildschirmständer &emsp; &#x25BC;</button>
+            <button class="dropdownButton diyDropdownButton" id="bildschirmstaender" onclick="toggleDropdown(this.id)">
+                
+                <span class="dropdownLabel">Bildschirmständer &emsp; &#x25BC;</span></button>
             <div class="dropdownBox" id="bildschirmstaenderBox">
                 <div class="dropdownImageDiy">
                     <img src="../../assets/img/img_bildschirmstaender_zugeschnitten.png"/>
@@ -157,9 +157,9 @@
                     </a>
                 </div>
             </div>
-            <button class="dropdownButton dropdownActive" id="kopfhoererhalter" onclick="toggleDropdown(this.id)">
-                <img src="../../assets/img/img_kopfhoererhalter_zugeschnitten_imButton.png">
-                Kopfhörerhalter &emsp; &#x25BC;</button>
+            <button class="dropdownButton diyDropdownButton dropdownActive" id="kopfhoererhalter" onclick="toggleDropdown(this.id)">
+                
+                <span class="dropdownLabel">Kopfhörerhalter &emsp; &#x25BC;</span></button>
             <div class="dropdownBox" id="kopfhoererhalterBox">
                 <div class="dropdownImageDiy">
                     <img src="../../assets/img/img_kopfhoererhalter_zugeschnitten.png"/>
@@ -224,7 +224,7 @@
                 Auch hier liegt die Entscheidung wieder bei dir, wie du die Basis gestalten willst. 
                 In diesem Fall wurden beispielsweise die Kanten einfach mit einer Handsäge abgeflacht.</p>
                 
-            <h3 style="color: red;">– Render abgeflachte Kanten –</h3>
+                <img class="diyImg" src="../../assets/diy_bilder/Kopfhörerhalter_Basis.jpg">
 
             <p> Alles was du jetzt noch brauchst ist eine Einkerbung, damit du deine beiden Holzstücke stabil miteinander verbinden kannst. 
                 Zeichne dir hierfür zunächst ein Rechteck mit den Maßen 1 cm x 4 cm mittig auf deine Basis. 
@@ -232,7 +232,7 @@
             </p>
 
             <figure>
-                <video class="headerImg" src="../../assets/img/kopfhoererhalter_anim_4.mp4" autoplay loop controls>
+                <video class="diyImg" src="../../assets/diy_bilder/kopfhoererhalter_anim_4.mp4" autoplay loop controls>
             </figure>
 
             <button id="contentBottomButton" onclick="location.href='schritt5.html'">Nächster Schritt</button>

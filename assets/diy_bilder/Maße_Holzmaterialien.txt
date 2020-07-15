@@ -1,0 +1,24 @@
+Geplante Render von Materialien durch Aufzählung mit folgenden Maßen (HxBxT) ersetzen:
+
+Kopfhörerhalter:
+- 1x (A) 22cm x 9cm x 4cm
+- 1x (B) 9cm x 9cm x 4 cm
+
+Meditationsbank:
+- 2x (A) 18cm x 15cm x 2cm
+- 1x (B) 50cm x 17cm x 2 cm
+
+Monitorständer:
+Schubladen
+- 2x (A) 22cm x 5cm x 1cm
+- 2x (B) 22cm x 5cm x 1cm
+- 4x (C) 17cm x 5cm x 1cm
+- 2x (D) 20cm x 16cm x 0,5cm
+
+Rahmen
+- 2x (E) 18cm x 11cm x 1cm
+- 2x (F) 46cm x 18cm x 1cm
+- 1x (G) 18cm x 5cm x 1cm
+
+
+
