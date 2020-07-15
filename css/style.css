@@ -592,7 +592,7 @@ button:hover {
   margin-bottom: 2rem;
 }
 
-#content #headerImg {
+#content .headerImg {
   margin-top: 3rem;
   margin-bottom: 3rem;
   width: 100%;
@@ -757,4 +757,3 @@ em {
     height: 25rem;
   }
 }
-
