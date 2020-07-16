@@ -51,7 +51,7 @@
 
         <div id="popUp">
             <img src="../../assets/popup/avatar.png">
-            <p>Sehr gute Arbeit, du hast es geschafft. Viel Spaß bei deiner ersten Meditation!</p>
+            <p>Viel Spaß bei deiner ersten Meditation! Lade dein Zertifikat herunter und teile es mit deinen Freunden!</p>
             <img id="closeButton" src="../../assets/button/button_close.svg" onclick="togglePopUp()">
         </div>
 
@@ -218,13 +218,18 @@
         <article>
             <h2>5. Abschluss</h2>
 
-            <model-viewer class="modelviewer" shadow-intensity=".4" camera-controls autoplay src="../../assets/3d/meditationsbank.glb" auto-rotate alt="3D Modell Meditationsbank"
-            ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" ios-src="../../assets/3d/meditationsbank.usdz"><img id="viewerIcon" src="../../assets/3d/3d_icon.svg"></model-viewer>
+            <model-viewer class="modelviewer" shadow-intensity=".4" camera-controls autoplay src="../../assets/3d/meditationsbank.glb" auto-rotate alt="3D Modell Meditationsbank">
+                <img id="viewerIcon" src="../../assets/3d/3d_icon.svg">
+            </model-viewer>
             
             <p> Wow, Gute Arbeit! Nach Belieben kannst du die Flächen noch mit einem Holzlack oder Öl bepinseln. Und fertig ist deine selbstgebaute Meditationsbank. 
                 Hat dir das Spaß gemacht? Dein zweites Projekt wartet nur darauf, von dir in Angegriff genommen zu werden – der Holzify Bildschirmständer!  </p>
 
-            <button id="contentBottomButton" onclick="location.href='../bildschirmstaender/schritt1.html'">Nächstes Projekt</button>
+                <a href="../../assets/zertifikat/zertifikat_meditationsbank.jpg" download="Holzify-Zertifikat-Meditationsbank">
+                    <button id="contentBottomButton">
+                        <img src="../../assets/zertifikat/download_icon.svg" style="width: 1rem; margin-right: .5rem;">
+                        Dein Projekt-Zertifikat</button>
+                </a>
 
         </article>
     </main>

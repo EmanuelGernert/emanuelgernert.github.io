@@ -51,7 +51,7 @@
 
         <div id="popUp">
             <img src="../../assets/popup/avatar.png">
-            <p>Klasse gemacht! Hast du dir schon überlegt, wo auf dem Schreibtisch der Bildschirmständer platziert wird?</p>
+            <p>Klasse gemacht! Lade dein Zertifikat herunter und teile es mit deinen Freunden!</p>
             <img id="closeButton" src="../../assets/button/button_close.svg" onclick="togglePopUp()">
         </div>
 
@@ -217,8 +217,9 @@
         <article>
             <h2>4. Abschluss</h2>
 
-            <model-viewer class="modelviewer" shadow-intensity=".4" camera-controls autoplay src="../../assets/3d/monitorstaender.glb" auto-rotate alt="3D Modell Bildschirmständer"
-            ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" ios-src="../../assets/3d/monitorstaender.usdz"><img id="viewerIcon" src="../../assets/3d/3d_icon.svg"></model-viewer>
+            <model-viewer class="modelviewer" shadow-intensity=".4" camera-controls autoplay src="../../assets/3d/monitorstaender.glb" auto-rotate alt="3D Modell Bildschirmständer">
+                <img id="viewerIcon" src="../../assets/3d/3d_icon.svg">
+            </model-viewer>
 
             <p>Ist der Leim vollständig getrocknet kannst du die Flächen noch mit einem Holzlack deiner Wahl bestreichen. 
                 Nun nur noch die Schubladen einsetzen und fertig ist dein selbstgebauter Monitorständer.
@@ -226,7 +227,11 @@
 
             <p>Wurde dein Interesse am Holzarbeiten nun so richtig geweckt? Dann schau dir doch noch das nächste Projekt an und ergänze dein Schreibtisch um einen schicken Kopfhörerhalter. </p>
 
-            <button id="contentBottomButton" onclick="location.href='../kopfhoererhalter/schritt1.html'">Nächstes Projekt</button>
+            <a href="../../assets/zertifikat/zertifikat_bildschirmstaender.jpg" download="Holzify-Zertifikat-Bildschirmstaender">
+                <button id="contentBottomButton">
+                    <img src="../../assets/zertifikat/download_icon.svg" style="width: 1rem; margin-right: .5rem;">
+                    Dein Projekt-Zertifikat</button>
+            </a>
 
         </article>
     </main>

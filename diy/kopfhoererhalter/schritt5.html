@@ -51,7 +51,7 @@
 
         <div id="popUp">
             <img src="../../assets/popup/avatar.png">
-            <p>Dein Kopfhörer freut sich sicher schon darauf auf dem neu gebauten Halter zu hängen! </p>
+            <p>Super gemacht! Lade dein Zertifikat herunter und teile es mit deinen Freunden! </p>
             <img id="closeButton" src="../../assets/button/button_close.svg" onclick="togglePopUp()">
         </div>
 
@@ -218,8 +218,9 @@
         <article>
             <h2>5. Abschluss</h2>
 
-            <model-viewer class="modelviewer" shadow-intensity=".4" camera-controls autoplay src="../../assets/3d/Kopfhoererhalter.glb" auto-rotate alt="3D Modell Kopfhörerhalter"
-            ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" ios-src="../../assets/3d/Kopfhoererhalter.usdz"><img id="viewerIcon" src="../../assets/3d/3d_icon.svg"></model-viewer>
+            <model-viewer class="modelviewer" shadow-intensity=".4" camera-controls autoplay src="../../assets/3d/Kopfhoererhalter.glb" auto-rotate alt="3D Modell Kopfhörerhalter">
+                <img id="viewerIcon" src="../../assets/3d/3d_icon.svg">
+            </model-viewer>
 
             <p> Zu guter letzt kannst du nun noch deine Holzstücke mit einem Holzlack bepinseln. 
                 Dieser verleiht dem Holz ein gepflegtes Erscheinungsbild und schützt es vor Umwelteinflüssen.
@@ -230,7 +231,11 @@
 
             <p> Und schon hast du deinen ersten eigenen Kopfhörerhalter gebaut. Gute Arbeit! </p>
 
-            <button id="contentBottomButton" onclick="location.href='../../index.html'">Zurück zur Startseite</button>
+            <a href="../../assets/zertifikat/zertifikat_kopfhoererhalter.jpg" download="Holzify-Zertifikat-Kopfhoererhalter">
+                <button id="contentBottomButton">
+                    <img src="../../assets/zertifikat/download_icon.svg" style="width: 1rem; margin-right: .5rem;">
+                    Dein Projekt-Zertifikat</button>
+            </a>
 
         </article>
     </main>
