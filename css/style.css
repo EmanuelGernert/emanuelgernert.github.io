@@ -40,6 +40,8 @@ html, body{
   display: block;
   font-family: Ebony;
   -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
 }
 
 body {
@@ -786,7 +788,7 @@ em {
 }
 
 .diyImg {
-  width: 70%;
+  width: 100%;
   margin-bottom: 3rem;
   margin-top: 3rem;
   border-radius: var(--radius-small);
