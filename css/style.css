@@ -39,9 +39,6 @@ html, body{
   height: 100%;
   display: block;
   font-family: Ebony;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
 }
 
 body {
