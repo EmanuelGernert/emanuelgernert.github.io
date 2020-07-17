@@ -773,15 +773,15 @@ em {
 }
 
 #meditationsbank {
-  background-image: url("../../assets/img/img_meditationsbank_imButton.png");
+  background-image: url("../assets/img/img_meditationsbank_imButton.png");
 }
 
 #bildschirmstaender {
-  background-image: url("../../assets/img/img_bildschirmstaender_zugeschnitten_imButton.png");
+  background-image: url("../assets/img/img_bildschirmstaender_zugeschnitten_imButton.png");
 }
 
 #kopfhoererhalter {
-  background-image: url("../../assets/img/img_kopfhoererhalter_zugeschnitten_imButton.png");
+  background-image: url("../assets/img/img_kopfhoererhalter_zugeschnitten_imButton.png");
 }
 
 .diyTwoColumns {
